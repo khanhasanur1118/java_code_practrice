@@ -20,6 +20,7 @@ public class basic {
             end--;
 
         }
+        System.out.println("reverse thr array:");
         for(int j:arr){
             System.out.print(j +" ");
 
