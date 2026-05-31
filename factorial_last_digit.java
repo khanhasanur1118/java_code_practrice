@@ -11,7 +11,7 @@ public class factorial_last_digit {
             for (int j=1;j<=x;j++){
                 fact=fact*j;
             }
-            System.out.println(fact);
+            System.out.println(fact%10);
         }
     }
 }
