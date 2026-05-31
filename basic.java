@@ -8,7 +8,7 @@ public class basic {
             arr[i] = sc.nextInt();
         }
         System.out.println(arr.length-1);
-        System.out.println(arr[arr.length%2==0?arr.length/2-1:arr.length/2 ]);
+
 
         int start=0;
         int end=arr.length-1;
