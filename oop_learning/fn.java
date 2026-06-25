@@ -2,6 +2,7 @@ package oop_learning;
 import java.util.*;
 import java.io.*;
 
+
 class multiplacation{
     static int ml(int d,int f){
         int m= d*f;
