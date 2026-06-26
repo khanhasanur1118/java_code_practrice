@@ -23,5 +23,17 @@ public class fizz_bazz {
             }
             j++;
         }
+        Number(35);
+    }
+    static void Number(int a) {
+        // Generate a matching key: "fizz", "buzz", "fizzbuzz", or ""
+        String key = (a % 3 == 0 ? "fizz" : "") + (a % 5 == 0 ? "buzz" : "");
+
+        switch (key) {
+            case "fizzbuzz" -> System.out.println("fizz_buzz");
+            case "fizz"     -> System.out.println("fizz");
+            case "buzz"     -> System.out.println("buzz");
+            default         -> System.out.println("");
+        }
     }
 }
