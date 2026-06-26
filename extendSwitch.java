@@ -15,5 +15,9 @@ public class extendSwitch {
             case "friday" -> System.out.println("its a weekend");
             default -> System.out.println(day+" its a not even a day");
         }
+        switch(day){
+            case "satarday","monday","thursday" -> System.out.println("its tuition time");
+            default -> System.out.println(day+" its a weekend");
+        }
     }
 }
