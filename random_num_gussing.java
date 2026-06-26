@@ -29,6 +29,7 @@ public class random_num_gussing {
 
     }
     public static void main(String[] args) {
+
         guessNumber();
     }
 }
