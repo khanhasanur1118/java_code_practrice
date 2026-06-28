@@ -19,5 +19,8 @@ public class exception_handeling {
         catch(Exception e){
             System.out.println("something went wrong");
         }
+        finally{
+            input.close();
+        }
     }
 }
