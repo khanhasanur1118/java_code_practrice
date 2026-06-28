@@ -6,7 +6,7 @@ import static oop_learning.Taka.*;
 public class ConstructorOverLoad {
     public static void main(String[] args) {
         Taka tk=new Taka();
-        System.out.println(tk.amount);
+        System.out.println(tk.amount+","+tk.accType+","+tk.bankName);
         Taka.show();
     }
 }
