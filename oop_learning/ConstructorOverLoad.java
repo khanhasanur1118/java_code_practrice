@@ -1,7 +1,6 @@
 package oop_learning;
 import java.util.*;
 import java.io.*;
-import static oop_learning.Taka.*;
 
 public class ConstructorOverLoad {
     public static void main(String[] args) {
