@@ -9,6 +9,10 @@ public class constructor {
         System.out.println(new StringBuilder().append(add.university).append(",").append(add.degree_lavel).toString());
         Admission add1=new Admission("khan","Msc",2027,true);
         System.out.println(new StringBuilder().append(add1.university).append(",").append(add1.degree_lavel).append(",").append(add1.seassion).append(",").append(add1.scholarship).toString());
+        Admission add2=new Admission("khan",2027);
+        System.out.println(new StringBuilder().append(add2.university).append(",").append(add2.degree_lavel).append(",").append(add2.seassion).append(",").append(add2.scholarship).toString());
+
+
     }
 
 
@@ -31,5 +35,8 @@ class Admission{
         this.degree_lavel = degree_lavel;
         this.seassion = seassion;
         this.scholarship = scholarship;
+    }
+    Admission(String university,  int seassion  ){
+        this(university,null,seassion,false);
     }
 }
