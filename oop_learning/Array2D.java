@@ -9,7 +9,6 @@ public class Array2D {
         matrix.displayArray();
     }
 }
-
 class MatrixProcessor {
     private int rows;
     private int cols;
