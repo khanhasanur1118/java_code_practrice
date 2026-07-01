@@ -1,5 +1,6 @@
 package recursion;
 import java.util.*;
+import java.io.*;
 public class oneToN_print {
 
     static void main(String[] args) {
@@ -25,16 +26,24 @@ public class oneToN_print {
         System.out.println(end);
         printReverse(1,end-1);
     }
-    static void anotherVersionPrint(int k)throws ArithmeticException {
-        if(k==0)return;
-        int []arr=new int[k+1];
-        for(int i=1;i<=k;i++){
-            arr[i]=i;
-            System.out.print(arr[i]);
-            if (i<=arr.length-2)
-                System.out.print(", ");
-        }
 
+
+
+    static void anotherVersionPrint(int k) throws IllegalArgumentException {
+        if (k < 0) {
+            throw new IllegalArgumentException("Array size 'k' cannot be negative.");
+        }
+        if (k == 0) return;
+        int[] arr = new int[k + 1];
+        StringBuilder sb = new StringBuilder();
+        for (int i = 1; i <= k; i++) {
+            arr[i] = i;
+            sb.append(arr[i]);
+            if (i < k) {
+                sb.append(", ");
+            }
+        }
+        System.out.println(sb.toString());
     }
 
 }
