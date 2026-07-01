@@ -2,7 +2,6 @@ package oop_learning;
 import java.util.*;
 
 public class Array2D {
-
     public static void main(String[] args) {
         MatrixProcessor matrix = new MatrixProcessor();
         matrix.fillArray();
