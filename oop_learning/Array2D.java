@@ -25,8 +25,8 @@ class MatrixProcessor {
 
     public void fillArray() {
         System.out.println("Enter the elements of the array:");
-        for (int i = 0; i < arr.length; i++) { // arr.length gives number of rows
-            for (int j = 0; j < arr[i].length; j++) { // arr[i].length gives columns in that row
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
                 System.out.print("Element [" + i + "][" + j + "]: ");
                 arr[i][j] = sc.nextInt();
             }
