@@ -8,6 +8,7 @@ public class oneToN_print {
         System.out.println("end");
         int n2 = sc.nextInt();
         print(n1,n2);
+        sc.close();
     }
     static void print(int start,int end) {
         if (start == end+1 )return;
