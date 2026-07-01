@@ -1,7 +1,7 @@
 package recursion;
 import java.util.*;
 public class oneToN_print {
-    static int start=1;
+
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("start");
@@ -9,7 +9,7 @@ public class oneToN_print {
         System.out.println("end");
         int n2 = sc.nextInt();
         print(n1,n2);
-        printReverse(n2);
+        printReverse(1,n2);
         sc.close();
     }
     static void print(int start,int end) {
@@ -19,10 +19,10 @@ public class oneToN_print {
 
     }
 
-    static void printReverse(int end) {
+    static void printReverse(int start,int end) {
         if(start>end)return;
         System.out.println(end);
-        printReverse(end-1);
+        printReverse(1,end-1);
     }
 
 }
