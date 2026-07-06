@@ -28,7 +28,6 @@ public class oneToN_print {
     }
 
 
-
     static void anotherVersionPrint(int k) throws IllegalArgumentException {
         if (k < 0) {
             throw new IllegalArgumentException("Array size 'k' cannot be negative.");
