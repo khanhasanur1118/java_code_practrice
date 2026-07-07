@@ -15,6 +15,7 @@ public class reverseNumber {
         System.out.println("exponent: ");
         long exponent=sc.nextLong();
         System.out.println("result:"+pows(BigInteger.valueOf(base),exponent));
+        System.out.println("modify logic"+power(base,exponent));
         sc.close();
 
     }
@@ -36,5 +37,19 @@ public class reverseNumber {
         if(b==0) return BigInteger.ONE;
         return a.multiply(pows(a,b-1));
     }
+
+    public  static long power(long a,long b)throws IllegalArgumentException
+    {
+        if(b<0) throw new IllegalArgumentException("Exponent 'b' cannot be negative for integer power calculations.");
+
+        if(b==0) return 1;
+        long res=power(a,b/2);
+        if(b%2==0)return res*res;
+        else return a*res*res;
+    }
+
+
+
+
 
 }
