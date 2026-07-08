@@ -10,6 +10,7 @@ public class revNumString {
         String st= sc.next();
         System.out.println("reverse number:"+ printReverse(t,0));
         System.out.println("reversed string--"+printReverse2(st));
+        System.out.println(sum(t));
         sc.close();
     }
 
@@ -23,6 +24,10 @@ public class revNumString {
         if (as.isEmpty())return "";
         StringBuilder sb = new StringBuilder(as);
         return String.valueOf(String.valueOf(sb.reverse()));
+    }
+    public static int sum(int a){
+        if (a==0)return 0;
+        return a+sum(a-1);
     }
 
 }
