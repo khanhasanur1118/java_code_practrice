@@ -7,6 +7,7 @@ public class gcd {
       int r=sc.nextInt();
       System.out.println(gcdfn(n,r));
       System.out.println(findGCDIterative(n,r));
+        System.out.println(findGCD_normal(n,r));
     }
     public static int gcdfn(int a,int b){
         if(b==0)return a;
@@ -20,5 +21,16 @@ public class gcd {
             a = temp;
         }
         return a;
+    }
+
+    public static int findGCD_normal(int a, int b) {
+        int hcf=1;
+        for (int i = 2; i <Math.min(a,b); i++) {
+            if (a % i == 0 && b % i == 0) {
+                hcf = i;
+            }
+
+        }
+        return hcf;
     }
 }
