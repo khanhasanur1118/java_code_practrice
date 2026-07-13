@@ -9,9 +9,10 @@ public class varArgs {
         for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
-        String st=sc.nextLine();
+
         System.out.println(sum(arr));
-        System.out.println();
+        System.out.println(concat("md","hasanur","roshid","khan"));
+        sc.close();
     }
 
 
